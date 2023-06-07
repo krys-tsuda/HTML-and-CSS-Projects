@@ -1,0 +1,19 @@
+h1, h2	{
+	text-shadow: 2px 2px;
+}
+
+ul	{
+	list-style-type: circle;
+}
+
+ol	{
+	list-style-type: upper-roman;
+}
+
+h1	{
+	color: pink;
+}
+
+h2	{
+	color: purple;
+}
