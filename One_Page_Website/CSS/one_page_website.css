@@ -1,0 +1,112 @@
+/*-----------------------------
+    GENERIC STYLING
+-----------------------------*/
+body {
+    font-family: "Helvetica", sans-serif, serif;
+    font-size: 16px
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*--------------------------
+    GALLERY STYLING
+--------------------------*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 3px solid red;
+    border-radius: 7px;
+    margin: 0px auto;
+}
+
+.photo {
+    position: relative; 
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid #000000;
+    background-color: red;
+}
+
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 350px;
+    height: 300px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 350px;
+    height: 300px;
+}
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; /* For centering text inside .photo-overlay */
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.white-head {
+    color: #C9BDAA;
+    margin-top: 5%;
+}
+
+/*---------------------------------
+    PHOTO OVERLAY TRANSITIONS
+---------------------------------*/
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+/*---------------------------
+    FORM STYLING
+---------------------------*/
+#apply {
+
+}
+
+.apply {
+    width: 150px;
+    margin: 3px;
+    border: 1px solid red;
+    border-radius: 5px
+}
